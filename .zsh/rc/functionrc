@@ -1,8 +1,8 @@
 function chmod-r(){
-  sudo find $1 -type $2 -exec chmod $3 {} +
+    sudo find $1 -type $2 -exec chmod $3 {} +
 }
 function chmod+s(){
-  sudo find $1 -type d -exec chmod g+s {} +
+    sudo find $1 -type d -exec chmod g+s {} +
 }
 function vimrc(){
     if [ $1 ]; then
@@ -17,6 +17,7 @@ function r++(){
 }
 function refresh-comps(){
     fpath=( $ZSH_CONF_DIR/complements/* "${fpath[@]}" )
+    compinit
 }
 refresh-comps
 function fpath(){

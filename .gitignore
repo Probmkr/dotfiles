@@ -7,4 +7,9 @@
 !/README.md
 /.config/*
 !/.config/nvim/
-/.config/nvim/plugged/
+/.config/nvim/plugged/*
+!/.config/coc
+/.config/coc/*
+!/.config/coc/extensions/
+/.config/coc/extensions/*
+!/.config/coc/extensions/package.json

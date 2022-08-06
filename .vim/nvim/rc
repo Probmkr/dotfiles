@@ -2,10 +2,10 @@
 
 execute 'source' '$HOME/.vim/nvim/plug.rc'
 
-let g:python_host_prog = '/usr/local/var/pyenv/versions/py2neovim/bin/python'
-let g:python3_host_prog = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
 let g:loaded_perl_provider = 0
-let g:ruby_host_prog = $HOME . '/.rbenv/versions/2.6.3/bin/neovim-ruby-host'
+let g:ruby_host_prog = $HOME . '/usr/lib/ruby'
 let g:node_host_prog = $HOME . '/.n/lib/node_modules/neovim/bin/cli.js'
 
 echo 'plug loaded'
@@ -44,6 +44,6 @@ let g:neoterm_size=10
 let g:neoterm_autoscroll=1
 tnoremap <silent> <Esc> <C-\><C-n><C-w>
 
-execute 'source' '$HOME/.vim/nvim/coc.rc'
+execute 'source' '$HOME/.vim/nvim/fzf.rc'
 
 " vim: ft=vim
