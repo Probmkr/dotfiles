@@ -1,6 +1,7 @@
 /*
 !/.gitignore
 !/.zsh/
+/.zsh/rc/999-customrc
 !/.zshrc
 !/.vim
 !/.config/
