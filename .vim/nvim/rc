@@ -2,11 +2,23 @@
 
 execute 'source' '$HOME/.vim/nvim/plug.rc'
 
-let g:python_host_prog = '/usr/bin/python2'
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog = 'python2'
+let g:python3_host_prog = 'python3'
 let g:loaded_perl_provider = 0
-let g:ruby_host_prog = $HOME . '/usr/lib/ruby'
-let g:node_host_prog = $HOME . '/.n/lib/node_modules/neovim/bin/cli.js'
+let g:ruby_host_prog = '/usr/bin/ruby'
+let g:node_host_prog = '/usr/local/lib/node_modules/neovim/bin/cli.js'
+let g:coc_global_extensions = [
+    \'coc-fzf-preview',
+    \'coc-json',
+    \'coc-python',
+    \'coc-snippets',
+    \'coc-ultisnips',
+    \'coc-eslint',
+    \'coc-highlight',
+    \'coc-java',
+    \'coc-yaml',
+    \'coc-git',
+\]
 
 echo 'plug loaded'
 "autocmd VimEnter * execute 'NERDTree'
