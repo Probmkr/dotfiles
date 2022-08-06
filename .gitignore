@@ -1,0 +1,10 @@
+/*
+!/.gitignore
+!/.zsh/
+!/.zshrc
+!/.vim
+!/.config/
+!/README.md
+/.config/*
+!/.config/nvim/
+/.config/nvim/plugged/
