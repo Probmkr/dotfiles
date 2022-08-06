@@ -1,6 +1,6 @@
 " プラグインの設定
 
-execute 'source' '$NVIM_DIR/plug.rc'
+execute 'source' '$HOME/.vim/nvim/plug.rc'
 
 let g:python_host_prog = '/usr/local/var/pyenv/versions/py2neovim/bin/python'
 let g:python3_host_prog = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
@@ -44,6 +44,6 @@ let g:neoterm_size=10
 let g:neoterm_autoscroll=1
 tnoremap <silent> <Esc> <C-\><C-n><C-w>
 
-execute 'source' '$NVIM_DIR/coc.rc'
+execute 'source' '$HOME/.vim/nvim/coc.rc'
 
 " vim: ft=vim
