@@ -1,0 +1,13 @@
+#compdef argtest
+
+function _argtest() {
+    _arguments \
+    '(group2--x)-a' \
+    + group1 \
+    -m \
+    '(group2)-n' \
+    + group2 \
+    -x -y
+}
+
+# vim: ft=zsh

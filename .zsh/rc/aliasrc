@@ -1,0 +1,66 @@
+########################################
+# エイリアス
+
+alias la='ls -a'
+alias ll='ls -l'
+alias lal='ls -al'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias mkdir='mkdir -p'
+
+# sudo の後のコマンドでエイリアスを有効にする
+alias sudo='sudo '
+
+# グローバルエイリアス
+alias -g L='| less'
+alias -g G='| grep'
+alias -g T='| tee'
+alias -g EG='| egrep'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias lessdst='less /var/log/dstat.log'
+alias sl='sl -ea'
+#alias npxsa='npx gulp sass&'
+alias cdwww='cd /var/www/www/'
+alias cdapp="cd $HOME/Documents/repos/other/Node/Next/test_project/"
+alias cdcms='cd /var/www/cms/'
+alias cdhtml='cd /var/www/html/'
+alias cddkr="cd $HOME/Documents/Docker/"
+alias cdzrc="cd $ZSH_CONF_DIR/rc"
+alias cdcrc="cd $ZSH_CONF_DIR/complements/"
+alias vimvrc="vim $HOME/.vim/vimrc"
+alias vimmrc="vim $HOME/.zshrc"
+alias vimgig="vim ./.gitignore"
+alias vimali="sudo vim /etc/aliases"
+#alias srcrc='source $HOME/.zshrc'
+alias srcrc='exec -l zsh'
+alias srcemip="sudo bash $HOME/Iptables/emer.sh"
+alias vimemip="vim $HOME/Iptables/emer.sh"
+#alias mysqlst='sudo systemctl status mysql'
+#alias apachest='sudo systemctl status apache2'
+#alias discordst='sudo systemctl status discordbot'
+alias pbcopy='xsel --clipbord --input'
+alias gunzip='gunzip -k'
+alias open=xdg-open
+alias srcip='sudo bash $HOME/Iptables/iptables.sh'
+alias vimip='vim $HOME/Iptables/iptables.sh'
+alias saveip='sudo netfilter-persistent save'
+alias catip='sudo iptables -L -n'
+alias systu='sudo systemctl status'
+alias sysst='sudo systemctl start'
+alias sysre='sudo systemctl restart'
+alias sysop='sudo systemctl stop'
+alias cputemp='cat /sys/class/thermal/thermal_zone0/temp'
+alias startmc='java -Xms1024M -Xmx1024M -jar'
+alias vim="nvim"
+alias gitlogt="git log --graph --oneline"
+alias rmail="mailx -f $HOME/Maildir"
+alias authlog="less /var/log/auth.log"
+alias S=" | sed"
+alias srcpost="sudo newaliases && sudo systemctl restart postfix"
+
+# vim: ft=zsh

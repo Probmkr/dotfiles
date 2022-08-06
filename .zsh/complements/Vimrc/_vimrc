@@ -1,0 +1,6 @@
+#compdef vimrc
+
+function  () {
+    _path_files -W $ZSH_CONF_DIR/rc
+}
+

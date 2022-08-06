@@ -1,0 +1,33 @@
+function chmod-r(){
+  sudo find $1 -type $2 -exec chmod $3 {} +
+}
+function chmod+s(){
+  sudo find $1 -type d -exec chmod g+s {} +
+}
+function vimrc(){
+    if [ $1 ]; then
+        vim $ZSH_CONF_DIR/rc/$1
+    else 
+        vim $ZSH_CONF_DIR/rc/000-mainrc
+    fi
+}
+function r++(){
+    g++ ${1:-main.cpp} -o ${2:-a.out}
+    ./${2:-a.out} ${@:2}
+}
+function refresh-comps(){
+    fpath=( $ZSH_CONF_DIR/complements/* "${fpath[@]}" )
+}
+refresh-comps
+function fpath(){
+    echo $fpath
+}
+function source_rc(){
+    source $ZSH_CONF_DIR/rc/$1
+}
+function _source_rc(){
+    _path_files -W $ZSH_CONF_DIR/rc
+}
+compdef _source_rc source_rc
+
+# vim: ft=zsh

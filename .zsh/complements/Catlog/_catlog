@@ -1,0 +1,5 @@
+#compdef catlog
+function _catlog() {
+    _path_files -W /var/log
+}
+

@@ -1,0 +1,55 @@
+#compdef analog
+
+function _analog() {
+    #path vars
+
+    _arguments \
+        "(-h --help 1 2)"{-h,--help}"[show help]" \
+        "1: :->logfile" \
+        "2: :->logtype"
+
+    case $state in
+    logfile)
+        local mainComplements=(
+            "auth"
+            "webaccess"
+            "weberror"
+            "wwwaccess"
+            "appaccess"
+        )
+        # echo ${mainComplements[@]
+        _values \
+            "log file" \
+            $(echo ${mainComplements[@]})
+        ;;
+
+    logtype)
+        case $words[2] in
+        auth)
+            # local authComplements=$(cat $authComplementFilePath | xargs)
+            local authComplements=(
+                "ips"
+                "login"
+            )
+            _values \
+                "log type" \
+                $(echo ${authComplements[@]})
+            ;;
+        webaccess)
+            local webaccessComplements=($(ls /var/log/apache2/*.access.log -d | sed -e "s/\/var\/log\/apache2\/\(.*\)\.access\.log/\1/g" | xargs))
+            _values \
+                "log type" \
+                $(echo ${webaccessComplements[@]})
+            ;;
+        weberror)
+            local weberrorComplements=($(ls /var/log/apache2/*.error.log -d | sed -e "s/\/var\/log\/apache2\/\(.*\)\.error\.log/\1/g" | xargs))
+            _values \
+                "log type" \
+                $(echo ${weberrorComplements[@]})
+            ;;
+        esac
+        ;;
+    esac
+}
+
+# vim: ft=zsh
