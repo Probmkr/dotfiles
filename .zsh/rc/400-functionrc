@@ -30,5 +30,12 @@ function _source_rc(){
     _path_files -W $ZSH_CONF_DIR/rc
 }
 compdef _source_rc source_rc
+function hrk_app(){
+    export HRA=$1
+}
+alias heroku_app="hrk-app"
+function hrk(){
+    heroku $@ -a $HRA
+}
 
 # vim: ft=zsh
