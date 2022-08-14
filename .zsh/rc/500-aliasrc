@@ -62,5 +62,6 @@ alias rmail="mailx -f $HOME/Maildir"
 alias authlog="less /var/log/auth.log"
 alias S=" | sed"
 alias srcpost="sudo newaliases && sudo systemctl restart postfix"
+alias sysu="systemctl --user"
 
 # vim: ft=zsh

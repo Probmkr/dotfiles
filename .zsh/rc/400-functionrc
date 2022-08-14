@@ -6,9 +6,9 @@ function chmod+s(){
 }
 function vimrc(){
     if [ $1 ]; then
-        vim $ZSH_CONF_DIR/rc/$1
+        nvim $ZSH_CONF_DIR/rc/$1
     else 
-        vim $ZSH_CONF_DIR/rc/000-mainrc
+        nvim $ZSH_CONF_DIR/rc/000-mainrc
     fi
 }
 function r++(){
