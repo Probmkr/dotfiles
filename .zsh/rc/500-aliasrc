@@ -45,7 +45,6 @@ alias vimemip="vim $HOME/Iptables/emer.sh"
 #alias discordst='sudo systemctl status discordbot'
 alias pbcopy='xsel --clipbord --input'
 alias gunzip='gunzip -k'
-alias open=xdg-open
 alias srcip='sudo bash $HOME/Iptables/iptables.sh'
 alias vimip='vim $HOME/Iptables/iptables.sh'
 alias saveip='sudo netfilter-persistent save'
