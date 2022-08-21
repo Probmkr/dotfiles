@@ -14,6 +14,7 @@ function vimrc(){
 function r++(){
     g++ ${1:-main.cpp} -o ${2:-a.out}
     ./${2:-a.out} ${@:2}
+    rm -f ${2:-a.out}
 }
 function refresh-comps(){
     fpath=( $ZSH_CONF_DIR/complements/* "${fpath[@]}" )
