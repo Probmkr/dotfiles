@@ -61,7 +61,7 @@ endfunction
 let g:neoterm_default_mod='belowright'
 let g:neoterm_size=10
 let g:neoterm_autoscroll=1
-tnoremap <silent> <Esc> <C-\><C-n><C-w>
+tnoremap <silent> <Esc> <C-\><C-n>
 
 execute 'source' '$HOME/.vim/nvim/fzf.rc'
 
