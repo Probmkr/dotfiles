@@ -2,6 +2,7 @@
 !/.gitignore
 !/.zsh/
 /.zsh/rc/999-customrc
+/.zsh/rc/000-varrc
 !/.zshrc
 !/.vim
 !/.config/
