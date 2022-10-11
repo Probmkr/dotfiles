@@ -16,6 +16,11 @@ function r++(){
     ./${2:-a.out} ${@:2}
     rm -f ${2:-a.out}
 }
+function rc++(){
+    gcc ${1:-main.cpp} -o ${2:-a.out}
+    ./${2:-a.out} ${@:2}
+    rm -f ${2:-a.out}
+}
 function runpy(){
     python ${1:-main.py}
 }
