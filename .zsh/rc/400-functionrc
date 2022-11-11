@@ -16,7 +16,7 @@ function r++(){
     ./${2:-a.out} ${@:2}
     rm -f ${2:-a.out}
 }
-function rc++(){
+function rc(){
     gcc ${1:-main.c} -o ${2:-a.out}
     ./${2:-a.out} ${@:2}
     rm -f ${2:-a.out}
