@@ -65,4 +65,4 @@ tnoremap <silent> <Esc> <C-\><C-n>
 
 execute 'source' '$HOME/.vim/nvim/fzf.rc'
 
-" vim: ft=vim
+" vim: set ft=vim
