@@ -9,4 +9,3 @@ for rcfile in `ls $ZSH_CONF_DIR/rc/*`
 do
     source $rcfile
 done
-
