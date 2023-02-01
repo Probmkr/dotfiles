@@ -10,5 +10,4 @@ do
     source $rcfile
 done
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
