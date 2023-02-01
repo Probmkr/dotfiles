@@ -10,7 +10,7 @@ HISTFILE=~/.zsh_history
 
 # Use modern completion system
 autoload -Uz compinit
-compinit
+# compinit
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
@@ -60,8 +60,8 @@ zstyle ':zle:*' word-style unspecified
 ########################################
 # 補完
 # 補完機能を有効にする
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
 
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -169,6 +169,7 @@ case ${OSTYPE} in
         ;;
 esac
 
+echo "prompt_type is '$prompt_type'"
 # カスタムプロンプト
 case $prompt_type in
     adam)
@@ -177,7 +178,7 @@ case $prompt_type in
         prompt adam1;;
     green)
         # 1行表示
-        PROMPT="%~ %# "
+        RPROMPT="%~ %# "
         # 2行表示
         PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
 %# ";;
@@ -185,4 +186,4 @@ esac
 
 
 
-# vim:set ft=zsh:
+# vim: ft=zsh
