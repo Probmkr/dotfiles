@@ -49,5 +49,8 @@ function hrk(){
 function rand(){
     cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w ${1:-16} | head -n ${2:-1}
 }
+function srcvenv(){
+    source ${1:-.venv}/bin/activate
+}
 
 # vim: ft=zsh
