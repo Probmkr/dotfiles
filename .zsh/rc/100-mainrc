@@ -176,6 +176,10 @@ case $prompt_type in
         autoload -Uz promptinit
         promptinit
         prompt adam1;;
+    adamred)
+        autoload -Uz promptinit
+        promptinit
+        prompt adam1 red;;
     green)
         # 1行表示
         RPROMPT="%~ %# "
