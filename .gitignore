@@ -10,3 +10,4 @@
 /.config/*
 !/.config/nvim/
 /.config/nvim/plugged/*
+/.vim/nvim/custom.rc

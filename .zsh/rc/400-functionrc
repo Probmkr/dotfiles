@@ -52,5 +52,9 @@ function rand(){
 function srcvenv(){
     source ${1:-.venv}/bin/activate
 }
+function ojt(){
+    g++ main.cpp
+    oj t -d tests
+}
 
 # vim: ft=zsh
