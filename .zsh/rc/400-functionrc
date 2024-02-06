@@ -52,9 +52,16 @@ function rand(){
 function srcvenv(){
     source ${1:-.venv}/bin/activate
 }
+function ojd() {
+    oj t -d tests $*
+}
 function ojt(){
     g++ main.cpp
-    oj t -d tests
+    ojd
+    rm ./a.out
+}
+function ojtp(){
+    ojd -c "python main.py"
 }
 
 # vim: ft=zsh
