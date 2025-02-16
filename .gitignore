@@ -11,3 +11,5 @@
 !/.config/nvim/
 /.config/nvim/plugged/*
 /.vim/nvim/custom.rc
+.DS_Store
+/.vim/vim/plugged/*
